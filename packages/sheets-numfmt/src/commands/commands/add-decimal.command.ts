@@ -53,7 +53,7 @@ export const AddDecimalCommand: ICommand = {
             });
         });
         const decimals = maxDecimals + 1;
-        const defaultPattern = setPatternDecimal(`0${decimals > 0 ? '.0' : ''}`, decimals);
+        const defaultPattern = setPatternDecimal(`0${decimals > 0 ? ',0' : ''}`, decimals);
         const values: ISetNumfmtCommandParams['values'] = [];
 
         selections.forEach((selection) => {
