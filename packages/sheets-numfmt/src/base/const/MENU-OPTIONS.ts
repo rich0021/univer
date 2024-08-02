@@ -33,24 +33,24 @@ export const MENU_OPTIONS: Array<{ label: string; pattern: string | null } | '|'
     '|',
     {
         label: 'sheet.numfmt.accounting',
-        pattern: '"¥" #,##0.00_);[Red]("¥"#,##0.00)',
+        pattern: '"RP" #.##0,00_);[Red]("RP"#.##0,00)',
     },
     {
         label: 'sheet.numfmt.financialValue',
-        pattern: '#,##0.00;[Red]#,##0.00',
+        pattern: '#.##0,00;[Red]#.##0,00',
     },
     {
         label: 'sheet.numfmt.currency',
-        pattern: '"¥"#,##0.00_);[Red]("¥"#,##0.00)',
+        pattern: '"RP"#.##0,00_);[Red]("RP"#.##0,00)',
     },
     {
         label: 'sheet.numfmt.roundingCurrency',
-        pattern: '"¥"#,##0;[Red]"¥"#,##0',
+        pattern: '"RP"#.##0;[Red]"RP"#.##0',
     },
     '|',
     {
         label: 'sheet.numfmt.date',
-        pattern: 'yyyy-mm-dd;@',
+        pattern: 'dd-mm-yyyy;@',
     },
     {
         label: 'sheet.numfmt.time',
@@ -58,7 +58,7 @@ export const MENU_OPTIONS: Array<{ label: string; pattern: string | null } | '|'
     },
     {
         label: 'sheet.numfmt.dateTime',
-        pattern: 'yyyy-m-d am/pm h:mm',
+        pattern: 'd-m-yyyy am/pm h:mm',
     },
     {
         label: 'sheet.numfmt.timeDuration',
