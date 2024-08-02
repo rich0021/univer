@@ -15,6 +15,7 @@
  */
 
 export const currencySymbols = [
+    'RP',
     '$',
     '£',
     '¥',
