@@ -1,113 +1,113 @@
 {
-    "name": "@univerjs/sheets-numfmt",
-    "version": "0.2.6",
-    "private": false,
-    "description": "UniverSheet numfmt plugin",
-    "author": "DreamNum <developer@univer.ai>",
-    "license": "Apache-2.0",
-    "funding": {
-        "type": "opencollective",
-        "url": "https://opencollective.com/univer"
-    },
-    "homepage": "https://univer.ai",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dream-num/univer"
-    },
-    "bugs": {
-        "url": "https://github.com/dream-num/univer/issues"
-    },
-    "keywords": [
-        "univer"
-    ],
-    "sideEffects": [
-        "**/*.css"
-    ],
-    "exports": {
-        ".": "./src/index.ts",
-        "./*": "./src/*",
-        "./locale/*": "./src/locale/*.ts"
-    },
+  "name": "@rich002/sheets-numfmt",
+  "version": "0.2.6",
+  "private": false,
+  "description": "Fork of UniverSheet numfmt plugin",
+  "author": "DreamNum <developer@univer.ai>",
+  "license": "Apache-2.0",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/univer"
+  },
+  "homepage": "https://univer.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rich0021/univer"
+  },
+  "bugs": {
+    "url": "https://github.com/dream-num/univer/issues"
+  },
+  "keywords": [
+    "univer"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*",
+    "./locale/*": "./src/locale/*.ts"
+  },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/es/index.js",
+  "types": "./lib/types/index.d.ts",
+  "publishConfig": {
+    "access": "public",
     "main": "./lib/cjs/index.js",
     "module": "./lib/es/index.js",
-    "types": "./lib/types/index.d.ts",
-    "publishConfig": {
-        "access": "public",
-        "main": "./lib/cjs/index.js",
-        "module": "./lib/es/index.js",
-        "exports": {
-            ".": {
-                "import": "./lib/es/index.js",
-                "require": "./lib/cjs/index.js",
-                "types": "./lib/types/index.d.ts"
-            },
-            "./*": {
-                "import": "./lib/es/*",
-                "require": "./lib/cjs/*",
-                "types": "./lib/types/index.d.ts"
-            },
-            "./lib/*": "./lib/*",
-            "./locale/*": "./lib/locale/*.json"
-        }
-    },
-    "directories": {
-        "lib": "lib"
-    },
-    "files": [
-        "lib"
-    ],
-    "scripts": {
-        "test": "vitest run",
-        "test:watch": "vitest",
-        "coverage": "vitest run --coverage",
-        "lint:types": "tsc --noEmit",
-        "build": "tsc && vite build",
-        "sync:cnpm": "cnpm sync"
-    },
-    "peerDependencies": {
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
-        "@univerjs/engine-numfmt": "workspace:*",
-        "@univerjs/engine-render": "workspace:*",
-        "@univerjs/sheets": "workspace:*",
-        "@univerjs/sheets-ui": "workspace:*",
-        "@univerjs/ui": "workspace:*",
-        "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
-        "rxjs": ">=7.0.0"
-    },
-    "dependencies": {
-        "@univerjs/icons": "^0.1.70"
-    },
-    "devDependencies": {
-        "@types/react": "^18.3.3",
-        "@univerjs/core": "workspace:*",
-        "@univerjs/design": "workspace:*",
-        "@univerjs/engine-formula": "workspace:*",
-        "@univerjs/engine-numfmt": "workspace:*",
-        "@univerjs/engine-render": "workspace:*",
-        "@univerjs/shared": "workspace:*",
-        "@univerjs/sheets": "workspace:*",
-        "@univerjs/sheets-ui": "workspace:*",
-        "@univerjs/ui": "workspace:*",
-        "less": "^4.2.0",
-        "react": "18.3.1",
-        "rxjs": "^7.8.1",
-        "typescript": "^5.5.4",
-        "vite": "^5.3.5",
-        "vitest": "^2.0.4"
-    },
-    "univerSpace": {
-        ".": {
-            "import": "./lib/es/index.js",
-            "require": "./lib/cjs/index.js",
-            "types": "./lib/types/index.d.ts"
-        },
-        "./*": {
-            "import": "./lib/es/*",
-            "require": "./lib/cjs/*",
-            "types": "./lib/types/index.d.ts"
-        },
-        "./lib/*": "./lib/*",
-        "./locale/*": "./lib/locale/*.json"
+    "exports": {
+      ".": {
+        "import": "./lib/es/index.js",
+        "require": "./lib/cjs/index.js",
+        "types": "./lib/types/index.d.ts"
+      },
+      "./*": {
+        "import": "./lib/es/*",
+        "require": "./lib/cjs/*",
+        "types": "./lib/types/index.d.ts"
+      },
+      "./lib/*": "./lib/*",
+      "./locale/*": "./lib/locale/*.json"
     }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint:types": "tsc --noEmit",
+    "build": "tsc && vite build",
+    "sync:cnpm": "cnpm sync"
+  },
+  "peerDependencies": {
+    "@univerjs/core": "^0.2.6",
+    "@univerjs/design": "^0.2.6",
+    "@univerjs/engine-numfmt": "^0.2.6",
+    "@univerjs/engine-render": "^0.2.6",
+    "@univerjs/sheets": "^0.2.6",
+    "@univerjs/sheets-ui": "^0.2.6",
+    "@univerjs/ui": "^0.2.6",
+    "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+    "rxjs": ">=7.0.0"
+  },
+  "dependencies": {
+    "@univerjs/icons": "^0.1.70"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@univerjs/core": "workspace:*",
+    "@univerjs/design": "workspace:*",
+    "@univerjs/engine-formula": "workspace:*",
+    "@univerjs/engine-numfmt": "workspace:*",
+    "@univerjs/engine-render": "workspace:*",
+    "@univerjs/shared": "workspace:*",
+    "@univerjs/sheets": "workspace:*",
+    "@univerjs/sheets-ui": "workspace:*",
+    "@univerjs/ui": "workspace:*",
+    "less": "^4.2.0",
+    "react": "18.3.1",
+    "rxjs": "^7.8.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vitest": "^2.0.4"
+  },
+  "univerSpace": {
+    ".": {
+      "import": "./lib/es/index.js",
+      "require": "./lib/cjs/index.js",
+      "types": "./lib/types/index.d.ts"
+    },
+    "./*": {
+      "import": "./lib/es/*",
+      "require": "./lib/cjs/*",
+      "types": "./lib/types/index.d.ts"
+    },
+    "./lib/*": "./lib/*",
+    "./locale/*": "./lib/locale/*.json"
+  }
 }
